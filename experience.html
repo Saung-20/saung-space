@@ -32,23 +32,7 @@ body {
   flex: 1;   /* THIS is the key line */
 }
 
-footer {
-    background: #2f2f2f;
-    color: white;
-    padding: 25px 40px;
-    font-size: 14px;
-  }
 
-footer {
-  background-color: #2f2f2f;
-  color: white;
-  padding: 40px 0;
-}
-
-.footer-content {
-  max-width: 900px;
-  margin: auto;
-}
 
 
   nav {
@@ -94,6 +78,27 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
+
+   footer {
+    background: #2f2f2f;
+    color: white;
+    padding: 25px 40px;
+    font-size: 14px;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
 
  
 </style>
