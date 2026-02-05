@@ -1,33 +1,142 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Saung | Home</title>
-  <style>
-    body { font-family: Arial; background: #f5f5f5; }
-    .container { max-width: 900px; margin: auto; background: white; padding: 20px; }
-    nav { text-align: center; margin-bottom: 30px; }
-    nav a { margin: 0 15px; color: #0077cc; text-decoration: none; font-weight: bold; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saung | Home</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffffff;
+    color: #222;
+  }
+
+  /* INTRO SECTION */
+  .intro {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .intro p {
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 16px;
+  }
+
+  /* CARD SECTION */
+  .cards {
+    max-width: 1100px;
+    margin: 80px auto;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .card {
+    text-align: center;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .card a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background: #0077c8;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .card a:hover {
+    background: #005fa3;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #2f2f2f;
+    color: white;
+    padding: 25px 40px;
+    font-size: 14px;
+  }
+
+  footer p {
+    margin: 5px 0;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+</style>
 </head>
 
 <body>
-<div class="container">
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="experience.html">Professional Experience</a>
-  <a href="projects.html">Projects</a>
-</nav>
+<!-- INTRO -->
+<section class="intro">
+  <h1>Nice to Meet You</h1>
 
-<h1>Saung</h1>
-<p>Electrical Engineering Student</p>
+  <p>
+    My name is Saung Nadi Hlaing, and I am a third-year Electrical Engineering
+    student at King Mongkut’s Institute of Technology Ladkrabang (KMITL).
+    I possess a strong academic foundation supported by practical experience
+    in laboratory-based learning, programming, and academic coordination.
+  </p>
 
-<img src="profile.jpg" width="200" style="border-radius:50%;">
+  <p>
+    Through my academic journey, I have developed solid analytical,
+    problem-solving, and communication skills, along with the ability to
+    work effectively in structured and team-oriented environments.
+    Further information regarding my professional experiences, technical
+    skills, and academic projects can be found in the respective sections
+    of this profile.
+  </p>
+</section>
 
-</div>
+<!-- IMAGE LINKS -->
+<section class="cards">
+
+  <div class="card">
+    <img src="experience.jpg" alt="Professional Experience">
+    <br>
+    <a href="experience.html">Professional Experiences</a>
+  </div>
+
+  <div class="card">
+    <img src="projects.jpg" alt="Projects">
+    <br>
+    <a href="projects.html">Projects</a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Email: massaungnadi@gmail.com</p>
+  <p>Phone: +66 9 5781 6891</p>
+  <p>Line ID: saungnadihlaing2721</p>
+</footer>
+
 </body>
 </html>
 
-</body>
-</html>
